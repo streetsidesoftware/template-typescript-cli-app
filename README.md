@@ -37,30 +37,30 @@ This is a simple command line tool that lists files matching the provided globs.
 
 1.  `pnpm run app "*"`
 
-    <!--- @@inject: static/example.md --->
-
     **Example:**
 
-    <pre>
-    <span style="color:#A50">Find Files:<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">LICENSE<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">README.md<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">bin.mjs<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">coverage<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">cspell.config.yaml<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">dist<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">package.json<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">pnpm-lock.yaml<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">release-please-config.json<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">scripts<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">src<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">static<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">tsconfig.json<span style="color:#FFF">
-    <span style="color:#555"> - <span style="color:#FFF"><span style="color:#AAA">vitest.config.ts<span style="color:#FFF">
-    <span style="color:#0A0">done.<span style="color:#FFF">
-    </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></pre>
+    <!--- @@inject: static/example.txt --->
 
-    <!--- @@inject-end: static/example.md --->
+    ```
+    Find Files:
+     - LICENSE
+     - README.md
+     - bin.mjs
+     - coverage
+     - cspell.config.yaml
+     - dist
+     - package.json
+     - pnpm-lock.yaml
+     - release-please-config.json
+     - scripts
+     - src
+     - static
+     - tsconfig.json
+     - vitest.config.ts
+    done.
+    ```
+
+    <!--- @@inject-end: static/example.txt --->
 
 ## `pnpm` - this template uses pnpm.
 
