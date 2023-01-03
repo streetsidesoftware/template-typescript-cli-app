@@ -1,0 +1,73 @@
+{
+  "name": "<template-typescript-cli-app>",
+  "version": "1.0.0",
+  "description": "Example command line tool.",
+  "type": "module",
+  "packageManager": "pnpm@7.21.0",
+  "bin": {
+    "list-files": "./bin.mjs"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "coverage": "vitest run --coverage",
+    "lint": "pnpm eslint && pnpm prettier",
+    "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
+    "lint:spell": "cspell \"**\"",
+    "prettier": "prettier -c .",
+    "prettier:fix": "prettier -w .",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix",
+    "app": "node ./bin.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "pnpm build"
+  },
+  "keywords": [
+    "template",
+    "hello"
+  ],
+  "author": {
+    "name": "Street Side Software",
+    "url": "https://github.com/streetsidesoftware"
+  },
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/template-typescript-cli-app/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/template-typescript-cli-app#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "@vitest/coverage-c8": "^0.26.2",
+    "cspell": "^6.18.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3",
+    "vitest": "^0.26.2"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^9.4.1",
+    "globby": "^13.1.3"
+  },
+  "files": [
+    "bin.mjs",
+    "dist/**/*.mjs",
+    "dist/**/*.js",
+    "!**/*.test.*",
+    "!**/*.map"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
