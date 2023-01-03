@@ -1,0 +1,14 @@
+Usage: list-files [options] <files...>
+
+List Files
+
+Arguments:
+  files                 Files to scan for injected content.
+
+Options:
+  --no-must-find-files  No error if files are not found.
+  --cwd <dir>           Current Directory
+  --color               Force color.
+  --no-color            Do not use color.
+  -V, --version         output the version number
+  -h, --help            display help for command
