@@ -1,0 +1,18 @@
+version: '0.2'
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - autobuild
+  - buildscript
+  - codecov
+  - codeql
+  - coverallsapp
+  - globby
+  - lcov
+  - mdast
+  - pnpm
+  - unist
+  - vfile
+ignoreWords: []
+import: []
