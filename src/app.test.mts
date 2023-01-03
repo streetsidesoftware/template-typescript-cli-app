@@ -2,7 +2,7 @@ import { describe, expect, test, afterEach, vi } from 'vitest';
 import { Command, CommanderError } from 'commander';
 import { run, app } from './app.mjs';
 
-const oc = (a: object) => expect.objectContaining(a);
+// const oc = (a: object) => expect.objectContaining(a);
 const sc = (s: string) => expect.stringContaining(s);
 const ac = <T extends any>(a: T[]) => expect.arrayContaining(a);
 
@@ -10,6 +10,7 @@ describe('app', () => {
     afterEach(() => {
         vi.clearAllMocks();
     });
+
     test.each`
         args                                                   | expected
         ${'*.md'}                                              | ${ac([sc('README.md'), sc('done.')])}

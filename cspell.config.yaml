@@ -1,18 +1,30 @@
 version: '0.2'
-ignorePaths: []
+ignorePaths:
+  - .git/{FETCH_HEAD,HEAD,index,packed-refs,config}
+  - .git/{hooks,info,logs,objects,refs}/**
+  - '*-lock.*'
+  - '*.lock'
+  - /coverage
+  - /dist
+  - CHANGELOG.md
+  - cspell.config.*
+  - node_modules
+  - .gitattributes
+  - .gitignore
+  - .prettierignore
+
+enableGlobDot: true
+useGitignore: true
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - lcov
+  - pnpm
+  - codeql
   - autobuild
   - buildscript
-  - codecov
-  - codeql
   - coverallsapp
-  - globby
-  - lcov
-  - mdast
-  - pnpm
-  - unist
-  - vfile
+  - codecov
+
 ignoreWords: []
 import: []
