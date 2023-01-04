@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/streetsidesoftware/template-typescript-cli-app/compare/v1.0.0...v1.0.1) (2023-01-04)
+
+
+### Bug Fixes
+
+* make spell check part of lint ([#5](https://github.com/streetsidesoftware/template-typescript-cli-app/issues/5)) ([27def50](https://github.com/streetsidesoftware/template-typescript-cli-app/commit/27def5084eb5e717282a02998e2a2b89fc599442))
+
 ## 1.0.0 (2023-01-03)
 
 
