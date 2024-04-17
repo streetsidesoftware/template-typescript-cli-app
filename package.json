@@ -21,7 +21,7 @@
     "coverage": "vitest run --coverage",
     "lint": "pnpm eslint:check && pnpm prettier:check",
     "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
-    "lint:spell": "cspell \"**\"",
+    "lint:spell": "cspell . --no-progress",
     "prettier:check": "prettier -c .",
     "prettier:fix": "prettier -w .",
     "eslint:check": "eslint .",
