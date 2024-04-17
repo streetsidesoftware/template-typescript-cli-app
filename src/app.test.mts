@@ -36,8 +36,16 @@ describe('app', () => {
         program.exitOverride((e) => {
             throw e;
         });
-        const _spyLog = vi.spyOn(console, 'log').mockImplementation(() => undefined);
+        const output = {
+            writeOut: vi.fn(),
+            writeErr: vi.fn(),
+            outputError: vi.fn(),
+        };
+        program.configureOutput(output);
         await expect(run(argv, program)).rejects.toBeInstanceOf(CommanderError);
+        expect(output.outputError).not.toHaveBeenCalled();
+        expect(output.writeOut).toHaveBeenCalled();
+        expect(output.writeErr).not.toHaveBeenCalled();
     });
 
     test.each`
