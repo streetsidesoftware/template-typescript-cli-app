@@ -17,16 +17,20 @@ jobs:
     strategy:
       matrix:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        node-version: [14.x, 16.x, 18.x, 19.x]
+        node-version: [18.x, 20.x, 21.x]
         os:
           - ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup
-        uses: ./.github/actions/install-build-test
+        uses: streetsidesoftware/actions/public/setup-node-pnpm@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Install - Build - Test
+        uses: ./.github/actions/install-build-test
 
   test-os:
     runs-on: ${{ matrix.os }}
@@ -41,10 +45,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup
-        uses: ./.github/actions/install-build-test
+        uses: streetsidesoftware/actions/public/setup-node-pnpm@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Install - Build - Test
+        uses: ./.github/actions/install-build-test
 
   coverage:
     permissions:
