@@ -1,13 +1,10 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "@tsconfig/node16/tsconfig.json",
+    "extends": "@tsconfig/node20",
     "compilerOptions": {
-        "alwaysStrict": true,
         "declaration": true,
         "declarationMap": true,
         "exactOptionalPropertyTypes": true,
-        "module": "ES2020",
-        "moduleResolution": "node16",
         "newLine": "LF",
         "noImplicitAny": true,
         "noImplicitThis": true,
@@ -19,7 +16,8 @@
         "strictFunctionTypes": true,
         "strict": true,
         "types": ["node"],
+        "rootDir": "src",
         "outDir": "dist"
     },
-    "include": ["src/**/*.ts", "src/**/*.test.ts", "src/**/*.mts", "src/**/*.test.mts", "bin.mjs"]
+    "include": ["src"]
 }

@@ -1,8 +1,10 @@
-import chalk from 'chalk';
-import { Command, program as defaultCommand } from 'commander';
 import { promises as fs } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+
+import chalk from 'chalk';
+import { Command, program as defaultCommand } from 'commander';
 import * as path from 'path';
+
 import { findFiles } from './findFiles.mjs';
 
 const __filename = fileURLToPath(import.meta.url);

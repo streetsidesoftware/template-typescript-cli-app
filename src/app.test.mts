@@ -1,10 +1,11 @@
-import { describe, expect, test, afterEach, vi } from 'vitest';
 import { Command, CommanderError } from 'commander';
-import { run, app } from './app.mjs';
+import { afterEach, describe, expect, test, vi } from 'vitest';
 
-// const oc = (a: object) => expect.objectContaining(a);
-const sc = (s: string) => expect.stringContaining(s);
-const ac = <T extends any>(a: T[]) => expect.arrayContaining(a);
+import { app, run } from './app.mjs';
+
+// const oc = expect.objectContaining;
+const sc = expect.stringContaining;
+const ac = expect.arrayContaining;
 
 describe('app', () => {
     afterEach(() => {
@@ -35,7 +36,7 @@ describe('app', () => {
         program.exitOverride((e) => {
             throw e;
         });
-        const spyLog = vi.spyOn(console, 'log').mockImplementation(() => undefined);
+        const _spyLog = vi.spyOn(console, 'log').mockImplementation(() => undefined);
         await expect(run(argv, program)).rejects.toBeInstanceOf(CommanderError);
     });
 
