@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/streetsidesoftware/template-typescript-cli-app/compare/v1.0.1...v1.0.2) (2024-04-17)
+
+
+### Bug Fixes
+
+* Update dependencies and actions ([#10](https://github.com/streetsidesoftware/template-typescript-cli-app/issues/10)) ([5ddb274](https://github.com/streetsidesoftware/template-typescript-cli-app/commit/5ddb274beaf5c24ca7341332adc66ecbbf1e4ce6))
+
 ## [1.0.1](https://github.com/streetsidesoftware/template-typescript-cli-app/compare/v1.0.0...v1.0.1) (2023-01-04)
 
 
