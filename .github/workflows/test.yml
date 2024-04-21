@@ -22,7 +22,7 @@ jobs:
           - ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup
         uses: streetsidesoftware/actions/public/setup-node-pnpm@v1
@@ -44,7 +44,7 @@ jobs:
           - macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup
         uses: streetsidesoftware/actions/public/setup-node-pnpm@v1
@@ -69,7 +69,7 @@ jobs:
           - ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup
         uses: ./.github/actions/setup
         with:
