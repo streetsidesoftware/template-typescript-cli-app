@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^12.1.0
     version: 12.1.0(eslint@9.1.0)
   globals:
-    specifier: ^15.0.0
-    version: 15.0.0
+    specifier: ^15.2.0
+    version: 15.2.0
   inject-markdown:
     specifier: ^3.0.0
     version: 3.0.0
@@ -2400,8 +2400,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /globals@15.0.0:
-    resolution: {integrity: sha512-m/C/yR4mjO6pXDTm9/R/SpYTAIyaUB4EOzcaaMEl7mds7Mshct9GfejiJNQGjHHbdMPey13Kpu4TMbYi9ex1pw==}
+  /globals@15.2.0:
+    resolution: {integrity: sha512-FQ5YwCHZM3nCmtb5FzEWwdUc9K5d3V/w9mzcz8iGD1gC/aOTHc6PouYu0kkKipNJqHAT7m51sqzQjEjIP+cK0A==}
     engines: {node: '>=18'}
     dev: true
 
