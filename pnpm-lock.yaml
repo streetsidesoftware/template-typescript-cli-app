@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^12.1.0
     version: 12.1.0(eslint@9.4.0)
   globals:
-    specifier: ^15.3.0
-    version: 15.3.0
+    specifier: ^15.8.0
+    version: 15.8.0
   inject-markdown:
     specifier: ^3.0.0
     version: 3.0.0
@@ -1992,7 +1992,7 @@ packages:
       eslint: 9.4.0
       eslint-plugin-es-x: 7.6.0(eslint@9.4.0)
       get-tsconfig: 4.7.5
-      globals: 15.3.0
+      globals: 15.8.0
       ignore: 5.3.1
       minimatch: 9.0.4
       semver: 7.6.2
@@ -2370,8 +2370,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /globals@15.3.0:
-    resolution: {integrity: sha512-cCdyVjIUVTtX8ZsPkq1oCsOsLmGIswqnjZYMJJTGaNApj1yHtLSymKhwH51ttirREn75z3p4k051clwg7rvNKA==}
+  /globals@15.8.0:
+    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
     engines: {node: '>=18'}
     dev: true
 
