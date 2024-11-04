@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^2.30.0
     version: 2.30.0(@typescript-eslint/parser@7.18.0)(eslint-import-resolver-typescript@3.6.3)(eslint@9.10.0)
   eslint-plugin-n:
-    specifier: ^17.10.2
-    version: 17.10.2(eslint@9.10.0)
+    specifier: ^17.12.0
+    version: 17.12.0(eslint@9.10.0)
   eslint-plugin-prettier:
     specifier: ^5.2.1
     version: 5.2.1(eslint-config-prettier@9.1.0)(eslint@9.10.0)(prettier@3.3.3)
@@ -2018,8 +2018,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n@17.10.2(eslint@9.10.0):
-    resolution: {integrity: sha512-e+s4eAf5NtJaxPhTNu3qMO0Iz40WANS93w9LQgYcvuljgvDmWi/a3rh+OrNyMHeng6aOWGJO0rCg5lH4zi8yTw==}
+  /eslint-plugin-n@17.12.0(eslint@9.10.0):
+    resolution: {integrity: sha512-zNAtz/erDn0v78bIY3MASSQlyaarV4IOTvP5ldHsqblRFrXriikB6ghkDTkHjUad+nMRrIbOy9euod2azjRfBg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -2029,7 +2029,7 @@ packages:
       eslint: 9.10.0
       eslint-plugin-es-x: 7.8.0(eslint@9.10.0)
       get-tsconfig: 4.8.1
-      globals: 15.9.0
+      globals: 15.11.0
       ignore: 5.3.2
       minimatch: 9.0.5
       semver: 7.6.3
@@ -2424,6 +2424,11 @@ packages:
 
   /globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+    dev: true
+
+  /globals@15.11.0:
+    resolution: {integrity: sha512-yeyNSjdbyVaWurlwCpcA6XNBrHTMIeDdj0/hnvX/OLJ9ekOXYbLsLinH/MucQyGvNnXhidTdNhTtJaffL2sMfw==}
     engines: {node: '>=18'}
     dev: true
 
