@@ -50,7 +50,7 @@
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.16.5",
     "@vitest/coverage-v8": "^1.6.0",
-    "cspell": "^8.14.2",
+    "cspell": "^8.16.0",
     "eslint": "^9.10.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
