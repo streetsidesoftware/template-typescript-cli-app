@@ -48,7 +48,7 @@
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.22.0",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.17.24",
+    "@types/node": "^22.13.10",
     "@vitest/coverage-v8": "^1.6.1",
     "cspell": "^8.17.5",
     "eslint": "^9.22.0",
